@@ -1,0 +1,22 @@
+<form [noValidate]="false"></form>
+<div class="loginContainer">
+
+  <div class="loginForm">
+
+    <div class="user">
+      <label for="user">Usuario: </label>
+      <input type="text" name="user" id="userLogin" required [(ngModel)]="usuario.username">
+    </div>
+    <div class="password">
+      <label for="password">Password: </label>
+      <input type="text" name="password" id="passwordLogin" required [(ngModel)]="usuario.password">
+    </div>
+    <div class="buttonLogin">
+      <input type="button" name="buttonLogin" value="Login" (click)="validarUsuario()">
+    </div>
+
+
+  </div>
+
+
+</div>
